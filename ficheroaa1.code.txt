@@ -1,8 +1,0 @@
-Clientes (#id, nombre, apellido, email, password, direccion, fechaRegistro)
-Diseños (#id, nombre_diseño, dimension, descripcion, paleta_colores, tendencia, diseñador, fecha_creacion, Id_padre)
-Productos (#id, nombre_producto, descripción_producto, precio, stock_total, referencia, fecha_ingreso, aplica_impuesto)
-Pedidos (#id, estado, fecha_pedido, instrucciones_cliente, subtotal, precio_total, costo_envio, numero_segumiento, -id_cliente, -id_metodopago)
-Metodospago (#id, numero_pago, tipo, costo_adicional, metodo_disponible, restriccion_pais, instrucciones, monto_minimo, -id_cliente)
-visitas (#id, fecha_visita, -id_cliente, -id_diseño)
-pedido_productos (#id, -id_pedido, -id_producto, precio_unidad, cantidad)
-producto_diseño (#id, -id_productos, -id_diseño)
