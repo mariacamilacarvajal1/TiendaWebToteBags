@@ -1,0 +1,8 @@
+Clientes (#id, nombre, apellido, direccion, telefono, email, password,  fechaRegistro)
+Diseños (#id, nombreDiseño, dimension, descripcion, paletaColores, tendencia, diseñador, fechaCreacion, Id_diseno_padre)
+Productos (#id, nombreProducto, descripciónProducto, precio, stockTotal, referencia, fechaIngreso, aplicaImpuesto)
+Pedidos (#id, estado, fechaPedido, instruccionesCliente, subtotal, precioTotal, costoEnvio, numeroSegumiento, -id_cliente, -id_metodopago)
+Metodospago (#id, numeroPago, tipo, costoAdicional, metodoDisponible, restriccionPais, instrucciones, montoMinimo, -id_cliente)
+visitas (#id, fechaVisita, -id_cliente, -id_diseño)
+pedido_producto (#id, -id_pedido, -id_producto, precioUnidad, cantidad)
+producto_diseño (#id, -id_productos, -id_diseño)
